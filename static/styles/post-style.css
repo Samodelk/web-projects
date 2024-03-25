@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    width: 1440px;
+    height: 2689px;
+    margin: 0 auto;
+}
+
+div {
+    display: block;
+}
+
+.header {
+    width: 100%;
+    height: 74px;
+    padding: 17px 0 0 250px;
+}
+
+.header .navigation-menu {
+    width: 940px;
+    height: 40px;
+    text-align: right;
+}
+
+.header .logo {
+    float: left;
+    padding-top: 3px;
+}
+
+.header .navigation-element {
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Oxygen';
+    line-height: 20px;
+    letter-spacing: 0.6px;
+    color: #2E2E2E;
+}
+
+.main {
+    width: 100%;
+    height: 2526px;
+    padding: 89px 0 0;
+}
+
+.main-header {
+    width: 940px;
+    height: 159px;
+    margin: 0 250px 38px;
+}
+
+.main-header-top {
+    width: 498px;
+    height: 51px;
+    margin: -7px 0 0 221px;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 400;
+    font-family: 'Lora';
+    line-height: 51px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #2E2E2E;
+}
+
+.main-header-lower-top {
+    width: 504px;
+    height: 20px;
+    margin: 20px 218px;
+}
+
+.main-header-lower-top h3 {
+    font-size: 17px;
+    font-weight: 400;
+    font-family: 'Oxygen';
+    line-height: 20px;
+    text-align: center;
+    color: #2E2E2EA1;
+}
+
+.main-img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.main-text {
+    width: 100%;
+    height: 1706px;
+    padding: 140px 240px;
+}
+
+p {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Oxygen';
+    line-height: 35px;
+    color: #101315;
+}
+
+.footer {
+    width: 100%;
+    height: 89px;
+    background: url(/static/images/blur-village.svg);
+}
+
+.footer-background {
+    width: 100%;
+    height: 100%;
+    background: #232F3899;
+}
+
+.footer-padding {
+    width: 100%;
+    height: 100%;
+    padding: 28px 0 0 240px;
+}
+
+.footer .navigation-menu {
+    width: 940px;
+    height: 34px;
+    text-align: right;
+}
+
+.footer .logo {
+    float: left;
+    padding: 3px 0 0 10px;
+}
+
+.footer .navigation-element {
+    display: inline-block;
+    text-transform: uppercase;
+    height: 26px;
+    padding: 4px 10px;
+    font-size: 11px;
+    font-weight: 400;
+    font-family: 'Oxygen';
+    line-height: 26px;
+    letter-spacing: 1px;
+    color: #FFF9;
+}

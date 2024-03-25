@@ -1,8 +1,35 @@
+<?php
+$featured = [
+    [
+        'background_img' => 'static/images/northern-lights.svg',
+        'button' => 'none',
+        'button_text' => '',
+        'title' => 'The Road Ahead',
+        'subtitle' => 'The road ahead might be paved - it might not be.',
+        'img' => 'static/images/mat-vogels.svg',
+        'img_modifier' => 'Mat Vogels',
+        'author' => 'Mat Vogels',
+        'date' => 'September 25, 2015'
+    ],
+    [
+        'background_img' => 'static/images/sky-lantern.svg',
+        'button' => 'button',
+        'button_text' => 'Adventure',
+        'title' => 'From Top Down',
+        'subtitle' => 'Once a year, go someplace you’ve never been before.',
+        'img' => 'static/images/william-wong.svg',
+        'img_modifier' => 'William Wong',
+        'author' => 'William Wong',
+        'date' => 'September 25, 2015'
+    ],
+];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="index-style.css">
+        <link rel="stylesheet" href="static/styles/home-style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
@@ -13,7 +40,7 @@
             <div class="header-container">
                 <div class="header-navigation">
                     <div class="navigation__logo">
-                        <img src="index-img/logo.svg" alt="Escape.">
+                        <img src="static/images/logo.svg" alt="Escape.">
                     </div>
                     <nav class="navigation-menu">
                         <li href="#" class="header-navigation-menu__item">Home</li>
@@ -48,39 +75,11 @@
                         <h3 class="posts-header__text">Featured Posts</h3>
                         <div class="posts-header__line"></div>
                     </div>
-                    <div class="featured-post-first">
-                        <h3 class="featured-post__header">The Road Ahead</h3>
-                        <h3 class="featured-post__lower-header">The road ahead might be paved - it might not be.</h3>
-                        <div class="featured-post-author-and-date">
-                            <div class="author">
-                                <div class="author__photo">
-                                    <img src="index-img/mat-vogels.svg" alt="Mat Vogels">
-                                </div>
-                                <h3 class="featured-post-author__name">Mat Vogels</h3>
-                            </div>
-                            <div class="featured-post-date">
-                                September 25, 2015
-                            </div>
-                        </div>
-                    </div>
-                    <div class="featured-post-second">
-                        <div class="featured-post__button">
-                            Adventure
-                        </div>
-                        <h3 class="featured-post__header">From Top Down</h3>
-                        <h3 class="featured-post__lower-header">Once a year, go someplace you’ve never been before.</h3>
-                        <div class="featured-post-author-and-date">
-                            <div class="author">
-                                <div class="author__photo">
-                                    <img src="index-img/william-wong.svg" alt="William Wong">
-                                </div>
-                                <h3 class="featured-post-author__name">William Wong</h3>
-                            </div>
-                            <div class="featured-post-date">
-                                September 25, 2015
-                            </div>
-                        </div>
-                    </div>
+                    <?php 
+                        foreach ($featured as $featured_post) {
+                            include 'featured_post_preview.php';
+                        }
+                    ?>
                 </div>
                 <div class="recent">
                     <div class="posts-header">
@@ -89,7 +88,7 @@
                     </div>
                     <div class="recent-post">
                         <div class="recent-post__image">
-                            <img src='index-img/air-balloons.svg' alt="Air balloons">
+                            <img src='static/images/air-balloons.svg' alt="Air balloons">
                         </div>
                         <div class="recent-post-header">
                             <h3 class="recent-post-header__header">Still Standing Tall</h3>
@@ -98,7 +97,7 @@
                         <div class="recent-post-author-and-date">
                             <div class="author">
                                 <div class="author__photo">
-                                    <img src="index-img/william-wong.svg" alt="William Wong">
+                                    <img src="static/images/william-wong.svg" alt="William Wong">
                                 </div>
                                 <h3 class="recent-post-author__name">William Wong</h3>
                             </div>
@@ -109,7 +108,7 @@
                     </div>
                     <div class="recent-post">
                         <div class="recent-post__image">
-                            <img src='index-img/bridge.svg' alt="Bridge">
+                            <img src='static/images/bridge.svg' alt="Bridge">
                         </div>
                         <div class="recent-post-header">
                             <h3 class="recent-post-header__header">Sunny Side Up</h3>
@@ -118,7 +117,7 @@
                         <div class="recent-post-author-and-date">
                             <div class="author">
                                 <div class="author__photo">
-                                    <img src="index-img/mat-vogels.svg" alt="Mat Vogels">
+                                    <img src="static/images/mat-vogels.svg" alt="Mat Vogels">
                                 </div>
                                 <h3 class="recent-post-author__name">Mat Vogels</h3>
                             </div>
@@ -129,7 +128,7 @@
                     </div>
                     <div class="recent-post">
                         <div class="recent-post__image">
-                            <img src='index-img/scenery.svg' alt="Scenery">
+                            <img src='static/images/scenery.svg' alt="Scenery">
                         </div>
                         <div class="recent-post-header">
                             <h3 class="recent-post-header__header">Water Falls</h3>
@@ -138,7 +137,7 @@
                         <div class="recent-post-author-and-date">
                             <div class="author">
                                 <div class="author__photo">
-                                    <img src="index-img/mat-vogels.svg" alt="Mat Vogels">
+                                    <img src="static/images/mat-vogels.svg" alt="Mat Vogels">
                                 </div>
                                 <h3 class="recent-post-author__name">Mat Vogels</h3>
                             </div>
@@ -149,7 +148,7 @@
                     </div>
                     <div class="recent-post">
                         <div class="recent-post__image">
-                            <img src='index-img/blue-water.svg' alt="Blue water">
+                            <img src='static/images/blue-water.svg' alt="Blue water">
                         </div>
                         <div class="recent-post-header">
                             <h3 class="recent-post-header__header">Through the Mist</h3>
@@ -158,7 +157,7 @@
                         <div class="recent-post-author-and-date">
                             <div class="author">
                                 <div class="author__photo">
-                                    <img src="index-img/william-wong.svg" alt="William Wong">
+                                    <img src="static/images/william-wong.svg" alt="William Wong">
                                 </div>
                                 <h3 class="recent-post-author__name">William Wong</h3>
                             </div>
@@ -169,7 +168,7 @@
                     </div>
                     <div class="recent-post">
                         <div class="recent-post__image">
-                            <img src='index-img/cableway-in-fog.svg' alt="Cableway in fog">
+                            <img src='static/images/cableway-in-fog.svg' alt="Cableway in fog">
                         </div>
                         <div class="recent-post-header">
                             <h3 class="recent-post-header__header">Awaken Early</h3>
@@ -178,7 +177,7 @@
                         <div class="recent-post-author-and-date">
                             <div class="author">
                                 <div class="author__photo">
-                                    <img src="index-img/mat-vogels.svg" alt="Mat Vogels">
+                                    <img src="static/images/mat-vogels.svg" alt="Mat Vogels">
                                 </div>
                                 <h3 class="recent-post-author__name">Mat Vogels</h3>
                             </div>
@@ -189,7 +188,7 @@
                     </div>
                     <div class="recent-post">
                         <div class="recent-post__image">
-                            <img src='index-img/waterfall.svg' alt="Waterfall">
+                            <img src='static/images/waterfall.svg' alt="Waterfall">
                         </div>
                         <div class="recent-post-header">
                             <h3 class="recent-post-header__header">Try it Always</h3>
@@ -198,7 +197,7 @@
                         <div class="recent-post-author-and-date">
                             <div class="author">
                                 <div class="author__photo">
-                                    <img src="index-img/mat-vogels.svg" alt="Mat Vogels">
+                                    <img src="static/images/mat-vogels.svg" alt="Mat Vogels">
                                 </div>
                                 <h3 class="recent-post-author__name">Mat Vogels</h3>
                             </div>
@@ -214,7 +213,7 @@
             <div class="footer-navigation-container">
                 <div class="footer-navigation">
                     <div class="navigation__logo">
-                        <img src="index-img/logo.svg" alt="Escape.">
+                        <img src="static/images/logo.svg" alt="Escape.">
                     </div>
                     <nav class="navigation-menu">
                         <li href="#" class="footer-navigation-menu__item">Home</li>
