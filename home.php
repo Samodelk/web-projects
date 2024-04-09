@@ -1,6 +1,7 @@
 <?php
 $featured = [
     [
+        'id' => 1,
         'background_img' => 'static/images/northern-lights.svg',
         'button' => 'none',
         'button_text' => '',
@@ -12,6 +13,7 @@ $featured = [
         'date' => 'September 25, 2015'
     ],
     [
+        'id' => 2,
         'background_img' => 'static/images/sky-lantern.svg',
         'button' => 'button',
         'button_text' => 'Adventure',

@@ -10,6 +10,9 @@
                <img src="<?= $featured_post['img'] ?>" alt=<?= $featured_post['img_modifier'] ?>>
             </div>
             <h3 class="featured-post-author__name"><?= $featured_post['author'] ?></h3>
+            <a title='<?= $featured_post['title'] ?>' href='/post?id=<?= $featured_post['id'] ?>'>
+               <?= $featured_post['subtitle'] ?>
+            </a>
          </div>
          <div class="featured-post-date"><?= $featured_post['date'] ?></div>
    </div>
